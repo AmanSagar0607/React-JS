@@ -7,15 +7,16 @@ function App () {
   // let counter = 5
   // Add VALUE using "USESTATE HOOK"
   const addValue = () => {
-    counter += 5
-    setCounter(counter)
+    setCounter((prevCounter) => prevCounter + 1)
+    setCounter((prevCounter) => prevCounter + 1)
+    setCounter((prevCounter) => prevCounter + 1)
+    setCounter((prevCounter) => prevCounter + 1)
     console.log('Clicked', counter)
   }
 
   // Remove VALUE using "USESTATE HOOK"
   const removeValue = () => {
-    if (counter > 0) counter -= 5;
-    setCounter(counter) 
+    if (counter > 0) setCounter(counter - 1) 
     console.log('Clicked', counter)
   }
 
@@ -24,7 +25,7 @@ function App () {
       <div>
         <h1>Learning React JS</h1>
         <h2>Counter Value : {counter} </h2>
-        <button onClick={addValue}>Add Value</button>
+        <button onClick={addValue} >Add Value</button>
         <br />
         <button onClick={removeValue}> remove Value </button>
       </div>
