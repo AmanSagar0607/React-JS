@@ -14,8 +14,8 @@ function App () {
 
   // Remove VALUE using "USESTATE HOOK"
   const removeValue = () => {
-    if (counter > 0)  counter -= 5;
-    setCounter(counter)
+    if (counter > 0) counter -= 5;
+    setCounter(counter) 
     console.log('Clicked', counter)
   }
 
